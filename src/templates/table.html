@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='tableStyle.css')}}"
+    />
+    <title>Spanish Conjugation</title>
+  </head>
+
+  <body>
+    <p><audio class="audio-for-speech"></audio></p>
+
+    <h1 class="translation">{{ verbTranslation }}</h1>
+
+    <div class="resubmit">
+        <form method="POST" action="/connect">
+        <input
+            id="element_1"
+            name="userVerb"
+            class="element text medium"
+            type="text"
+            maxlength="255"
+            value=""
+            placeholder="Enter another verb"
+        />
+
+        <input
+            id="saveForm"
+            class="button_text"
+            type="submit"
+            name="submit"
+            value="Submit"
+        />
+        </form>
+    </div>
+
+    {% for tableName, tableData in verbData.items() %}
+    <table class="redTable">
+      <caption>
+        {{ tableName }}
+      </caption>
+      <thead>
+        <tr>
+          <th></th>
+          {% for tense in tableData[0] %}
+          <th>{{ tense }}</th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td colspan="{{ tableData[0]|length + 1}}"></td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td><strong>yo</strong></td>
+          {% for cell in tableData[1] %}
+          <td>{{ cell }}</td>
+          {% endfor %}
+        </tr>
+        <tr>
+          <td><strong>tú</strong></td>
+          {% for cell in tableData[2] %}
+          <td>{{ cell }}</td>
+          {% endfor %}
+        </tr>
+        <tr>
+          <td><strong>él/ella/Ud.</strong></td>
+          {% for cell in tableData[3] %}
+          <td>{{ cell }}</td>
+          {% endfor %}
+        </tr>
+        <tr>
+          <td><strong>nosotros</strong></td>
+          {% for cell in tableData[4] %}
+          <td>{{ cell }}</td>
+          {% endfor %}
+        </tr>
+        <tr>
+          <td><strong>vosotros</strong></td>
+          {% for cell in tableData[5] %}
+          <td>{{ cell }}</td>
+          {% endfor %}
+        </tr>
+        <tr>
+          <td><strong>ellos/ellas/Uds.</strong></td>
+          {% for cell in tableData[6] %}
+          <td>{{ cell }}</td>
+          {% endfor %}
+        </tr>
+      </tbody>
+    </table>
+    {% endfor %}
+
+  </body>
+</html>

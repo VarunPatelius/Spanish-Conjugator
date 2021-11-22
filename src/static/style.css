@@ -1,0 +1,193 @@
+body {
+    font-family: "Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+    font-size: small;
+    margin: 8px 0 16px;
+    text-align: center;
+  }
+  
+  #formContainer {
+    background: #fff;
+  
+    margin: 0 auto;
+    text-align: left;
+    width: 640px;
+  }
+  
+  form.appnitro {
+    margin: 20px 20px 0;
+    padding: 0 0 20px;
+  }
+  
+  h1 {
+    background-color: #a40808;
+    margin: 0;
+    min-height: 0;
+    padding: 0;
+    text-decoration: none;
+    text-indent: -8000px;
+  }
+  
+  h1 a {
+    display: block;
+    height: 100%;
+    min-height: 40px;
+    overflow: hidden;
+  }
+  
+  
+  .appnitro {
+    font-family: Lucida Grande, Tahoma, Arial, Verdana, sans-serif;
+    font-size: small;
+  }
+  
+  .appnitro li {
+    width: 61%;
+  }
+  
+  form ul {
+    font-size: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  form li {
+    display: block;
+    margin: 0;
+    padding: 4px 5px 2px 9px;
+    position: relative;
+  }
+  
+  form li:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+  }
+  
+  .buttons:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+  }
+  
+  .buttons {
+    clear: both;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  * html form li {
+    height: 1%;
+  }
+  
+  * html .buttons {
+    height: 1%;
+  }
+  
+  * html form li div {
+    display: inline-block;
+  }
+  
+  form li div {
+    color: #444;
+    margin: 0 4px 0 0;
+    padding: 0 0 8px;
+  }
+  
+  form li span {
+    color: #444;
+    float: left;
+    margin: 0 4px 0 0;
+    padding: 0 0 8px;
+  }
+  
+  form li div.left {
+    display: inline;
+    float: left;
+    width: 48%;
+  }
+  
+  form li div.right {
+    display: inline;
+    float: right;
+    width: 48%;
+  }
+  
+  form li div.left .medium {
+    width: 100%;
+  }
+  
+  form li div.right .medium {
+    width: 100%;
+  }
+  
+  form li div label {
+    clear: both;
+    color: #444;
+    display: block;
+    font-size: 9px;
+    line-height: 9px;
+    margin: 0;
+    padding-top: 3px;
+  }
+  
+  form li span label {
+    clear: both;
+    color: #444;
+    display: block;
+    font-size: 9px;
+    line-height: 9px;
+    margin: 0;
+    padding-top: 3px;
+  }
+  
+  .formDescription {
+    border-bottom: 1px dotted #ccc;
+    clear: both;
+    display: inline-block;
+    margin: 0 0 1em;
+  }
+  
+  .formDescription[class] {
+    display: block;
+  }
+  
+  .formDescription h2 {
+    clear: left;
+    font-size: 160%;
+    font-weight: 400;
+    margin: 0 0 3px;
+  }
+  
+  form li.highlighted {
+    background-color: #fff7c0;
+  }
+  
+  form .guidelines {
+    background: #f5f5f5;
+    border: 1px solid #e6e6e6;
+    color: #444;
+    font-size: 80%;
+    left: 100%;
+    line-height: 130%;
+    margin: 0 0 0 8px;
+    padding: 8px 10px 9px;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    width: 42%;
+    z-index: 1000;
+  }
+  
+  form .guidelines small {
+    font-size: 105%;
+  }
+  
+  form li:hover .guidelines {
+    visibility: visible;
+  }

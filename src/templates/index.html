@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='style.css')}}"
+    />
+    <title>Spanish Conjugation</title>
+  </head>
+
+  <body>
+    <div id="formContainer">
+      <h1><a>userVerb</a></h1>
+      <form class="appnitro" method="POST" action="/connect">
+        <div class="formDescription">
+          <h2>Spanish Conjugator</h2>
+        </div>
+        <ul>
+          <li>
+            <label class="description">
+              Enter a Spanish verb
+            </label>
+            <div>
+              <input
+                name="userVerb"
+                class="medium"
+                type="text"
+                maxlength="30"
+                value=""
+              />
+            </div>
+            <p class="guidelines">
+              <small>ie. haber, ir, poner </small>
+            </p>
+          </li>
+
+          <li class="buttons">
+            <input type="hidden"/>
+
+            <input
+              type="submit"
+              name="submit"
+              value="Submit"
+            />
+          </li>
+        </ul>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+html,
+body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+.translation {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+table.redTable {
+  border: 2px solid #a40808;
+  background-color: #eee7db;
+  text-align: center;
+  border-collapse: collapse;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+table.redTable caption {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 20px;
+  letter-spacing: 0px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: 400;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: normal;
+  text-transform: capitalize;
+}
+
+table.redTable td,
+table.redTable th {
+  border: 1px solid #aaaaaa;
+  padding: 8px;
+}
+
+table.redTable tbody td {
+  font-size: 13px;
+}
+
+table.redTable tr:nth-child(even) {
+  background: #f5c8bf;
+}
+
+table.redTable thead {
+  background: #a40808;
+}
+
+table.redTable thead th {
+  font-size: 19px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  border-left: 2px solid #a40808;
+}
+
+table.redTable thead th:first-child {
+  border-left: none;
+}
+
+table.redTable tfoot {
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #a40808;
+}
+
+table.redTable tfoot td {
+  font-size: 13px;
+}
+
+table.redTable tfoot .links {
+  text-align: right;
+}
+
+table.redTable tfoot .links a {
+  display: inline-block;
+  background: #ffffff;
+  color: #a40808;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+.resubmit {
+  margin: auto;
+}
+
+.resubmit form {
+  text-align: center;
+}
